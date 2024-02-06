@@ -12,23 +12,23 @@ function M.colorScheme()
 end
 
 function M.highlights()
-	-- vim.g.terminal_color_0 = colors.background
-	-- vim.g.terminal_color_1 = colors.red
-	-- vim.g.terminal_color_2 = colors.green
-	-- vim.g.terminal_color_3 = colors.yellow
-	-- vim.g.terminal_color_4 = colors.blue
-	-- vim.g.terminal_color_5 = colors.purple
-	-- vim.g.terminal_color_6 = colors.cyan
-	-- vim.g.terminal_color_7 = colors.white
-	-- vim.g.terminal_color_8 = colors.grey
-	-- vim.g.terminal_color_9 = colors.red
-	-- vim.g.terminal_color_10 = colors.green
-	-- vim.g.terminal_color_11 = colors.yellow
-	-- vim.g.terminal_color_12 = colors.blue
-	-- vim.g.terminal_color_13 = colors.purple
-	-- vim.g.terminal_color_14 = colors.cyan
-	-- vim.g.terminal_color_15 = colors.white
-	--
+	vim.g.terminal_color_0 = colors.background
+	vim.g.terminal_color_1 = colors.red
+	vim.g.terminal_color_2 = colors.green
+	vim.g.terminal_color_3 = colors.yellow
+	vim.g.terminal_color_4 = colors.blue
+	vim.g.terminal_color_5 = colors.purple
+	vim.g.terminal_color_6 = colors.cyan
+	vim.g.terminal_color_7 = colors.white
+	vim.g.terminal_color_8 = colors.grey
+	vim.g.terminal_color_9 = colors.red
+	vim.g.terminal_color_10 = colors.green
+	vim.g.terminal_color_11 = colors.yellow
+	vim.g.terminal_color_12 = colors.blue
+	vim.g.terminal_color_13 = colors.purple
+	vim.g.terminal_color_14 = colors.cyan
+	vim.g.terminal_color_15 = colors.white
+
 	local highlights = {
 		Character = { fg = colors.orange },
 		Number = { fg = colors.orange },
@@ -36,7 +36,6 @@ function M.highlights()
 		Boolean = { fg = colors.orange },
 		Type = { fg = colors.yellow },
 		Structure = { fg = colors.yellow },
-		StorageClass = { fg = colors.yellow },
 		Constant = { fg = colors.cyan },
 		PreProc = { fg = colors.purple },
 		PreCondit = { fg = colors.purple },
@@ -49,7 +48,7 @@ function M.highlights()
 		Label = { fg = colors.purple },
 		Special = { fg = colors.orange },
 		SpecialChar = { fg = colors.red },
-		Operator = { fg = colors.purple },
+		Operator = { fg = colors.orange },
 		Title = { fg = colors.cyan },
 		Tag = { fg = colors.green },
 		Delimiter = { fg = colors.bright_grey },
@@ -82,6 +81,9 @@ function M.highlights()
 		["@operator"] = { fg = colors.bright_grey },
 		["@punctuation"] = { fg = colors.white },
 		["@label"] = { fg = colors.orange },
+		["@storageclass"] = { fg = colors.orange },
+		["StorageClass"] = { fg = colors.red },
+		["@method"] = { fg = colors.blue },
 		["@symbol"] = { fg = colors.orange },
 		["Ps1Variables"] = { fg = colors.orange },
 		["CursorLine"] = { bg = colors.dark_grey },
@@ -232,13 +234,13 @@ function M.highlights()
 		["@lsp.type.type_parameter.cs"] = "@type",
 		["@lsp.type.extension_method.cs"] = "@method",
 		["@lsp.type.method.cs"] = "@method",
-		["@lsp.type.keyword.cs"] = "@type.builtin",
 		["@lsp.type.constant.cs"] = "@constant",
 		["@lsp.type.enum.cs"] = "@type",
 		["@lsp.type.enum_member.cs"] = "@variable",
 		["@lsp.type.interface.cs"] = "@interface",
 		["@lsp.type.struct.cs"] = "@type",
 		["@lsp.type.field.cs"] = "@field",
+		["@lsp.type.fieldName.cs"] = "@field",
 		["@lsp.type.delegate.cs"] = "@method",
 		["@lsp.type.property_name.cs"] = "@property",
 		["@lsp.type.namespace_name.cs"] = "@namespace",
@@ -255,9 +257,9 @@ function M.highlights()
 		["@lsp.type.struct_name.cs"] = "@type",
 		["@lsp.type.field_name.cs"] = "@field",
 		["@lsp.type.delegate_name.cs"] = "@method",
-		["@lsp.type.punctuation.cs"] = "@punctuation",
+		["@lsp.type.string.cs"] = "String",
 		["@lsp.type.operator.cs"] = "@operator",
-		["@lsp.type.keyword_control.cs"] = "@keyword",
+		["@lsp.type.controlkeyword.cs"] = "@keyword",
 		["@lsp.type.variable.ps1"] = "Ps1Variables",
 		["@lsp.type.comment.ps1"] = "@comment",
 		["@lsp.type.property.ps1"] = "@property",
