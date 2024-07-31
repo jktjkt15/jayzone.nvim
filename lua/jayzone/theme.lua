@@ -1,14 +1,15 @@
-local colors = require("jayzone.colors")
+local colors = {}
 
 local M = {}
 
-function M.colorScheme()
+function M.colorScheme(opts)
 	vim.cmd("hi clear")
 	if vim.fn.exists("syntax_on") then
 		vim.cmd("syntax reset")
 	end
 	vim.o.termguicolors = true
-	vim.g.colors_name = "jayzone"
+	vim.g.colors_name = opts.name
+	colors = require("jayzone.colors").getColorScheme(opts.name)
 end
 
 function M.highlights()
