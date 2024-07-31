@@ -1,4 +1,4 @@
-local colors = require("jayzone.colors")
+local colors = require("jayzone.colors").getColorScheme(vim.g.colors_name)
 
 return {
 	inactive = {
