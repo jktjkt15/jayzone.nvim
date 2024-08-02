@@ -192,7 +192,7 @@ function M.highlights()
 		-- ["FzfLuaFzfBorder"] = { fg = colors.change, bg = colors.change },
 		-- ["FzfLuaFzfScrollbar"] = { fg = colors.change, bg = colors.change },
 		-- ["FzfLuaFzfSeparator"] = { fg = colors.change, bg = colors.change },
-		["FzfLuaFzfGutter"] = { bg = colors.none },
+		["FzfLuaFzfGutter"] = { bg = colors.none, fg = colors.blue },
 		["FzfLuaFzfHeader"] = { fg = colors.blue },
 		-- ["FzfLuaFzfInfo"] = { fg = colors.change, bg = colors.change },
 		-- ["FzfLuaFzfPointer"] = { fg = colors.change, bg = colors.change },
