@@ -311,6 +311,7 @@ function M.highlights()
 		["@lsp.type.string.cs"] = "String",
 		["@lsp.type.operator.cs"] = "@operator",
 		["@lsp.type.recordStruct.cs"] = "@struct",
+		["@lsp.type.recordClass.cs"] = "@type",
 		["@lsp.type.controlkeyword.cs"] = "@controlkeyword",
 		["@lsp.type.variable.ps1"] = "Ps1Variables",
 		["@lsp.type.comment.ps1"] = "@comment",
