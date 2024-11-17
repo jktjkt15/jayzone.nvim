@@ -4,12 +4,12 @@ return {
 	inactive = {
 		a = { fg = colors.dark_grey, bg = colors.background },
 		b = { fg = colors.dark_grey, bg = colors.background },
-		c = { fg = colors.dark_grey, bg = "none" },
+		c = { fg = colors.dark_grey, bg = colors.background },
 	},
 	normal = {
 		a = { fg = colors.white, bg = colors.blue },
 		b = { fg = colors.white, bg = colors.dark_grey },
-		c = { fg = colors.white, bg = "none" },
+		c = { fg = colors.white, bg = colors.background },
 	},
 	visual = { a = { fg = colors.background, bg = colors.purple } },
 	replace = { a = { fg = colors.background, bg = colors.red } },
