@@ -19,8 +19,9 @@ local colors = {
 		-- cyan = "#7dcfff", -- TO TEST
 		purple = "#c2a4ff",
 		dark_purple = "#8c62e0",
-		-- background = "#1f2228",
-		background = "#1a1b26",
+		background = "#1f2228",
+		-- background = "#1a1b26",
+
 		-- background = "#1f2228",
 		-- background = "#282C34",
 
