@@ -71,7 +71,7 @@ function M.highlights()
         ["@type"] = { fg = colors.yellow },
         ["@typeParameter"] = { fg = colors.red },
         ["@type.builtin"] = { fg = colors.orange },
-        ["@constant"] = { underline = true, fg = colors.white },
+        ["@constant"] = { underline = true, fg = colors.dark_purple },
         ["@interface"] = { fg = colors.yellow, italic = true },
         ["@struct"] = { fg = colors.yellow, underline = true },
         ["@number"] = { underline = true, fg = colors.red },
@@ -220,9 +220,9 @@ function M.highlights()
         GitSignsDeleteLn = { fg = colors.red, bold = true },
         GitSignsDeleteNr = { fg = colors.red, bold = true },
 
-        MiniNotifyBorder = { fg = colors.blue, bg = colors.background },
+        MiniNotifyBorder = { fg = colors.white, bg = colors.background },
         MiniNotifyNormal = { fg = colors.background, bg = colors.background },
-        MiniNotifyTitle = { fg = colors.green, bg = colors.background },
+        MiniNotifyTitle = { fg = colors.white, bg = colors.background },
 
         SignColumn = { fg = colors.white, bg = colors.background },
         FoldColumn = { fg = colors.white, bg = colors.background },
@@ -261,7 +261,7 @@ function M.highlights()
         LeapMatch = { fg = colors.blue },
         LeapLabelPrimary = { fg = colors.white, bg = colors.blue },
 
-        FugitiveDeltaText = { bg = colors.dark_grey }
+        FugitiveDeltaText = { bg = colors.dark_grey },
     }
 
     for target, highlight in pairs(highlights) do
@@ -330,7 +330,7 @@ function M.highlights()
         ["@lsp.type.property.ps1"] = "@property",
         ["@lsp.type.parameter.ps1"] = "@parameter",
         -- ["@lsp.type.constant.ps1"] = "@constant",
-        ["@lsp.typemod.variable.defaultLibrary.lua"] = "@keyword",
+        -- ["@lsp.typemod.variable.defaultLibrary.lua"] = "@keyword",
         ["@lsp.type.parameter.lua"] = "@parameter",
         ["@lsp.type.property.lua"] = "@property",
         ["@lsp.typemod.variable.declaration.lua"] = "@variable",

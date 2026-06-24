@@ -7,7 +7,7 @@ return {
 		c = { fg = colors.dark_grey, bg = colors.none },
 	},
 	normal = {
-		a = { fg = colors.white, bg = colors.blue },
+		a = { fg = colors.background, bg = colors.blue },
 		b = { fg = colors.white, bg = colors.dark_grey },
 		c = { fg = colors.white, bg = colors.none },
 	},

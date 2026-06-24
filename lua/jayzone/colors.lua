@@ -1,76 +1,160 @@
 local M = {}
 
+-- local foreground = hsl("#e8e8d3")
+-- local background = hsl("#151515")
+-- local grey = hsl("#888888")
+-- local grey_one = hsl("#1c1c1c")
+-- local grey_two = hsl("#f0f0f0")
+-- local grey_three = hsl("#333333")
+-- local regent_grey = hsl("#9098A0")
+-- local scorpion = hsl("#606060")
+-- local cod_grey = hsl("#101010")
+-- local tundora = hsl("#404040")
+-- local zambezi = hsl("#605958")
+-- local silver_rust = hsl("#ccc5c4")
+-- local silver = hsl("#c7c7c7")
+-- local alto = hsl("#dddddd")
+-- local gravel = hsl("#403c41")
+-- local boulder = hsl("#777777")
+-- local cocoa_brown = hsl("#302028")
+-- local grey_chateau = hsl("#a0a8b0")
+-- local bright_grey = hsl("#384048")
+-- local shuttle_grey = hsl("#535d66")
+-- local mine_shaft = hsl("#1f1f1f")
+-- local temptress = hsl("#40000a")
+--
+-- local bayoux_blue = hsl("#556779")
+-- local total_white = hsl("#ffffff")
+-- local total_black = hsl("#000000")
+-- local cadet_blue = hsl("#b0b8c0")
+-- local perano = hsl("#b0d0f0")
+-- local wewak = hsl("#f0a0c0")
+-- local mantis = hsl("#70b950")
+-- local raw_sienna = hsl("#cf6a4c")
+-- local highland = hsl("#799d6a")
+-- local hoki = hsl("#668799")
+-- local green_smoke = hsl("#99ad6a")
+-- local costa_del_sol = hsl("#556633")
+-- local biloba_flower = hsl("#c6b6ee")
+-- local morning_glory = hsl("#8fbfdc")
+-- local goldenrod = hsl("#fad07a")
+-- local ship_cove = hsl("#8197bf")
+-- local koromiko = hsl("#ffb964")
+-- local brandy = hsl("#dad085")
+-- local old_brick = hsl("#902020")
+-- local dark_blue = hsl("#0000df")
+-- local ripe_plum = hsl("#540063")
+-- local casal = hsl("#2D7067")
+-- local purple = hsl("#700089")
+-- local tea_green = hsl("#d2ebbe")
+-- local dell = hsl("#437019")
+-- local calypso = hsl("#2B5B77")
+--
+--
+-- #2e3440
+-- #3b4252
+-- #434c5e
+-- #4c566a
+-- #d8dee9
+-- #e5e9f0
+-- #eceff4
+-- #8fbcbb
+-- #88c0d0
+-- #81a1c1
+-- #5e81ac
+-- #bf616a
+-- #d08770
+-- #ebcb8b
+-- #a3be8c
+-- #b48ead
+
+--  #282a36
+-- #44475a
+-- #6272a4
+-- #f8f8f2
+-- #ff5555
+-- #ffb86c
+-- #f1fa8c
+-- #50fa7b
+--
+
 local colors = {
-	["jayzone"] = {
-		none = "none",
-		orange = "#ffb65b",
-		-- orange = "#ffb65b",
-		yellow = "#f3f383",
-		green = "#62ea76",
-		red = "#ea708e",
-		-- white = "#ffffff",
-		white = "#F2F3F3",
-		very_bright_grey = "#c8ccd4",
-		bright_grey = "#bebebe",
-		grey = "#565c64",
-		dark_grey = "#353b45",
-		blue = "#5a84e5",
-		cyan = "#61afef",
-		-- cyan = "#7dcfff", -- TO TEST
-		purple = "#c2a4ff",
-		dark_purple = "#8c62e0",
-		background = "#1f2228",
-		-- background = "#1a1b26",
+    ["jayzone"] = {
+        none = "none",
+        -- orange = "#d08770",
+        orange = "#e9967a",
+        -- orange = "#ffb65b",
+        -- yellow = "#f3f383",
+        yellow = "#ebcb8b",
+        -- green = "#17c3b2",
+        green = "#88d4c1",
+        red = "#ea708e",
+        -- white = "#fef9ef",
+        white = "#F2F3F3",
 
-		-- background = "#1f2228",
-		-- background = "#282C34",
+        very_bright_grey = "#c8ccd4",
+        bright_grey = "#bebebe",
+        grey = "#565c64",
+        dark_grey = "#2e3440",
+        blue = "#7a88bd",
+        cyan = "#b4d2f0",
+        -- cyan = "#6272a4", -- TO TEST
+        purple = "#c2a4ff",
+        dark_purple = "#8c62e0",
+        -- dark_purple = "#b48ead",
 
-		diff_add = "#009416",
-		diff_delete = "#ea708e",
-		diff_change = "#61afef",
-		diff_text = "#c2a4ff",
+        background = "#24283b",
+        -- background = "#1a1b26",
 
-		-- diff_add = "#009416",
-		-- diff_delete = "#de214f",
-		-- diff_change = "#1d4bb7",
-		-- diff_text = "#8143ff",
-	},
-	["jayzone2"] = {
-		none = "none",
-		orange = "#ffb65b",
-		-- orange = "#ffb65b",
-		yellow = "#f3f383",
-		green = "#62ea76",
-		red = "#ea708e",
-		-- white = "#ffffff",
-		white = "#F2F3F3",
-		very_bright_grey = "#c8ccd4",
-		bright_grey = "#bebebe",
-		grey = "#565c64",
-		dark_grey = "#353b45",
-		blue = "#5a84e5",
-		cyan = "#61afef",
-		-- cyan = "#7dcfff", -- TO TEST
-		purple = "#c2a4ff",
-		dark_purple = "#8c62e0",
-		background = "#1f2228",
-		-- background = "#282C34",
+        -- background = "#1f2228",
+        -- background = "#282C34",
 
-		diff_add = "#17c3b2",
-		diff_delete = "#3a86ff",
-		diff_change = "#61afef",
-		diff_text = "#6e44ff",
+        diff_add = "#009416",
+        diff_delete = "#ea708e",
+        diff_change = "#61afef",
+        diff_text = "#c2a4ff",
 
-		-- diff_add = "#009416",
-		-- diff_delete = "#de214f",
-		-- diff_change = "#1d4bb7",
-		-- diff_text = "#8143ff",
-	},
+        -- diff_add = "#009416",
+        -- diff_delete = "#de214f",
+        -- diff_change = "#1d4bb7",
+        -- diff_text = "#8143ff",
+    },
+    ["jayzone2"] = {
+        none = "none",
+        orange = "#ffb65b",
+        -- orange = "#ffb65b",
+        yellow = "#f3f383",
+        green = "#62ea76",
+        red = "#ea708e",
+        -- white = "#ffffff",
+        white = "#F2F3F3",
+        very_bright_grey = "#c8ccd4",
+        bright_grey = "#bebebe",
+        grey = "#565c64",
+        dark_grey = "#353b45",
+        blue = "#5a84e5",
+        cyan = "#61afef",
+        -- cyan = "#7dcfff", -- TO TEST
+        purple = "#c2a4ff",
+        dark_purple = "#8c62e0",
+        background = "#1f2228",
+        -- background = "#282C34",
+
+        diff_add = "#17c3b2",
+        diff_delete = "#3a86ff",
+        diff_change = "#61afef",
+        diff_text = "#6e44ff",
+
+        -- diff_add = "#009416",
+        -- diff_delete = "#de214f",
+        -- diff_change = "#1d4bb7",
+        -- diff_text = "#8143ff",
+    },
 }
 
 function M.getColorScheme(name)
-	name = name or "jayzone"
-	return colors[name] or colors["jayzone"]
+    name = name or "jayzone"
+    return colors[name] or colors["jayzone"]
 end
 
 return M
